@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "ITU Moodle Keep-Alive",
+  "version": "1.0",
+  "description": "Mantiene la sesión activa en aulas.itu.uncu.edu.ar en segundo plano para evitar el cierre por inactividad.",
+  "permissions": [
+    "alarms"
+  ],
+  "host_permissions": [
+    "*://aulas.itu.uncu.edu.ar/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
